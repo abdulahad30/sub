@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.text{
+    border: 1px solid red;
+    width: 30%;
+    /*hamma joyga teng*/
+    padding-top: 30px;
+    /* 1 - tepa-pastga; 2 - chap-o`ng*/
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    /* top -> right -> bottom -> left*/
+    padding: 10px 5px 15px 30px ;
+    margin: 10px 0px 5px 35px;
+transition: 10s;    
+}
+/*line-height=loremni har bir qatoridan pastga joy tashlaydi*/
+.box{
+    width: 500px;
+    height: 400px;
+    background-color: blue;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* davomiyligi*/
+    transition-duration: 1s;
+    /* kutish vaqti*/ 
+    transition-delay :0.1s ;
+    /* holat*/
+    transition-timing-function: linear;
+    /* ransition aynan nimaga nisbatan ishlatilishini bildiradi*/
+    transition-property: background;
+    border-bottom: 10px solid red;
+}
+.box:hover{
+    background-color: crimson;
+    border-radius: 50%;
+    color: #fff;
+}
